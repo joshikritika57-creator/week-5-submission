@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A responsive single-page application simulation built with HTML, CSS and vanilla JavaScript.">
+  <title>FlowSpace | SPA Simulation</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="FlowSpace home"><span class="brand-mark">F</span><span>FlowSpace</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle navigation">☰</button>
+    <nav id="primaryNav" class="primary-nav" aria-label="Main navigation">
+      <a href="#home" data-route="home">Home</a>
+      <a href="#projects" data-route="projects">Projects</a>
+      <a href="#about" data-route="about">About</a>
+      <a href="#contact" data-route="contact">Contact</a>
+    </nav>
+    <button id="themeToggle" class="theme-toggle" type="button" aria-label="Switch color theme">◐</button>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <div id="app" aria-live="polite" aria-busy="false">
+      <!-- JavaScript renders the selected view here. The default view is also rendered on load. -->
+    </div>
+  </main>
+
+  <footer class="site-footer"><span>© <span id="year"></span> FlowSpace</span><span>Built with HTML, CSS &amp; JavaScript</span></footer>
+  <noscript>This demo needs JavaScript enabled to switch between views.</noscript>
+</body>
+</html>
